@@ -64,7 +64,7 @@ function App() {
 
   // <------------- Radio Change section -------------->
   const LofiGirlVideo = () => {
-    setVideo("//?autoplay=1&mute=1&start=1");
+    setVideo("//www.youtube.com/watch?v=bSnlKl_PoQU?autoplay=1&mute=1&start=1");
     setStationName("LofiGirl");
     setYoutubeChannal(
       "https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow"
