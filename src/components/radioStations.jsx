@@ -27,14 +27,14 @@ const RadioStations = ({
           whileTap={{ scale: 0.9 }}
           onClick={Ambient}
           className={
-            setActiveStation(StationName) === "Ambient Renders"
+            setActiveStation(StationName) === "Ultratop Vlaamse Top 30"
               ? "activeStation"
               : "station"
           }
         >
           <img
             className={
-              setActiveStation(StationName) === "Ambient Renders"
+              setActiveStation(StationName) === "Ultratop Vlaamse Top 30"
                 ? "activeTriangle"
                 : "triangle"
             }
@@ -51,14 +51,14 @@ const RadioStations = ({
           whileTap={{ scale: 0.9 }}
           onClick={Anime}
           className={
-            setActiveStation(StationName) === "AnimeVibe"
+            setActiveStation(StationName) === "Ultratop Singles 50 Vlaanderen"
               ? "activeStation"
               : "station"
           }
         >
           <img
             className={
-              setActiveStation(StationName) === "AnimeVibe"
+              setActiveStation(StationName) === "Ultratop Singles 50 Vlaanderen"
                 ? "activeTriangle"
                 : "triangle"
             }
@@ -243,21 +243,21 @@ const RadioStations = ({
           whileTap={{ scale: 0.9 }}
           onClick={Lofi}
           className={
-            setActiveStation(StationName) === "LofiGirl"
+            setActiveStation(StationName) === "Ultratop Vlaamse Top 30"
               ? "activeStation"
               : "station"
           }
         >
           <img
             className={
-              setActiveStation(StationName) === "LofiGirl"
+              setActiveStation(StationName) === "Ultratop Vlaamse Top 30"
                 ? "activeTriangle"
                 : "triangle"
             }
             src={triangle}
             alt=""
           />
-          <span> Lofi Girl </span>
+          <span> Vlaamse Top 30 </span>
         </motion.div>
       </motion.div>
 

@@ -15,8 +15,8 @@ export const setActiveStation = (active) => {
     return "Ivy Records";
   } else if (active === "LofiBoy") {
     return "LofiBoy";
-  } else if (active === "LofiGirl") {
-    return "LofiGirl";
+  } else if (active === "Ultratop Vlaamse Top 30") {
+    return "Ultratop Vlaamse Top 30";
   } else if (active === "Nice Guys") {
     return "Nice Guys";
   } else if (active === "TOKYO TONES") {
