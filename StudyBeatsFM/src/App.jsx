@@ -64,13 +64,13 @@ function App() {
 
   // <------------- Radio Change section -------------->
   const LofiGirlVideo = () => {
-    setVideo("//www.youtube.com/embed/TURbeWK2wwg?autoplay=1&mute=1&start=1");
+    setVideo("//?autoplay=1&mute=1&start=1");
     setStationName("LofiGirl");
     setYoutubeChannal(
       "https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow"
     );
     setLivestream(
-      "https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl"
+      "https://www.youtube.com/watch?v=bSnlKl_PoQU"
     );
     playLiveStream(true);
     setPauseScreen("unpauseScreen");
@@ -81,13 +81,13 @@ function App() {
   };
 
   const AmbientRenders = (e) => {
-    setVideo("//www.youtube.com/embed/hBGbt2CRDpA?autoplay=1&mute=1&start=1");
+    etVideo("//www.youtube.com/watch?v=bSnlKl_PoQU?autoplay=1&mute=1&start=1");
     setStationName("Ambient Renders");
     setYoutubeChannal(
       "https://www.youtube.com/channel/UCXbXfisDHV_gDjawCKTyTIw"
     );
     setLivestream(
-      "https://www.youtube.com/watch?v=CoP5wLD9clU&ab_channel=AmbientRenders"
+      "https://www.youtube.com/watch?v=bSnlKl_PoQU&list=PLkPj9NDKnRq9RaFvE62bRCkrbGRlLQk4k"
     );
     playLiveStream(true);
     setPauseScreen("unpauseScreen");
