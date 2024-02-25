@@ -1,6 +1,6 @@
 export const setActiveStation = (active) => {
-  if (active === "Ambient Renders") {
-    return "Ambient Renders";
+  if (active === "Singles 50 Vlaanderen") {
+    return "Singles 50 Vlaanderen";
   } else if (active === "AnimeVibe") {
     return "AnimeVibe";
   } else if (active === "Astral Throb") {
@@ -15,8 +15,8 @@ export const setActiveStation = (active) => {
     return "Ivy Records";
   } else if (active === "LofiBoy") {
     return "LofiBoy";
-  } else if (active === "Ultratop Vlaamse Top 30") {
-    return "Ultratop Vlaamse Top 30";
+  } else if (active === "Vlaamse Top 30") {
+    return "Vlaamse Top 30";
   } else if (active === "Nice Guys") {
     return "Nice Guys";
   } else if (active === "TOKYO TONES") {

@@ -22,12 +22,12 @@ function App() {
   const [livestream, playLiveStream] = useState(false);
   const [pauseScreen, setPauseScreen] = useState("pauseScreen");
   const [currentLivestream, setLivestream] = useState(
-    "https://www.youtube.com/watch?v=JGwWNGJdvx8&list=PLkPj9NDKnRq8U_UrkMmAZnmrSE3vvmtfv&index=1&index=1"
+    "https://www.youtube.com/watch?v=5qap5aO4i9A&ab_channel=LofiGirl"
   );
 
   const [activeStation, setActiveStationState] = useState(false);
 
-  const [stationName, setStationName] = useState("Radio 2 Top 2000 (2023)");
+  const [stationName, setStationName] = useState("LofiGirl");
 
   const [youtubeChannal, setYoutubeChannal] = useState("");
 
@@ -63,14 +63,14 @@ function App() {
   );
 
   // <------------- Radio Change section -------------->
-  const VlaamseTop30 = () => {
-    setVideo("https://www.youtube.com/embed/VITDq1IfvqI&index=1?autoplay=1&mute=1");
-    setStationName("Ultratop Vlaamse Top 30");
+  const LofiGirlVideo = () => {
+    setVideo("//www.youtube.com/embed/TURbeWK2wwg?autoplay=1&mute=1&start=1");
+    setStationName("LofiGirl");
     setYoutubeChannal(
-      "https://www.youtube.com/channel/UCdkemcT8dE8ruICQ3YflBIA"
+      "https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow"
     );
     setLivestream(
-      "https://www.youtube.com/playlist?list=PLkPj9NDKnRq_Pj5QQcbgWyhc9FJtuscXh&index=1"
+      "https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl"
     );
     playLiveStream(true);
     setPauseScreen("unpauseScreen");
@@ -81,13 +81,13 @@ function App() {
   };
 
   const AmbientRenders = (e) => {
-    setVideo("//www.youtube.com/embed/JGwWNGJdvx8?autoplay=1&mute=1&start=1");
-    setStationName("Ambient Renders");
+    setVideo("//www.youtube.com/embed/z4Od6lohRcc?si=vSbn5hw8ymQu49rf");
+    setStationName("Singles Top 50");
     setYoutubeChannal(
       "https://www.youtube.com/channel/UCXbXfisDHV_gDjawCKTyTIw"
     );
     setLivestream(
-      "https://www.youtube.com/watch?v=JGwWNGJdvx8&list=PLkPj9NDKnRq8U_UrkMmAZnmrSE3vvmtfv"
+      "https://www.youtube.com/watch?v=VITDq1IfvqI&list=PLkPj9NDKnRq9NUt2Mp2mv-7GVnkCt-YMA&autoplay=1&index=2"
     );
     playLiveStream(true);
     setPauseScreen("unpauseScreen");
@@ -209,10 +209,14 @@ function App() {
   };
 
   const animeVibe = (e) => {
-    setVideo("//www.youtube.com/embed/5B7Rsw0L2r8?autoplay=1&mute=1&start=0");
-    setStationName("AnimeVibe");
-    setYoutubeChannal("https://www.youtube.com/c/AnimeVibe");
-    setLivestream("https://www.youtube.com/watch?v=JWlKA9wmO64");
+    setVideo("//www.youtube.com/embed/z4Od6lohRcc?si=vSbn5hw8ymQu49rf");
+    setStationName("Singles Top 50");
+    setYoutubeChannal(
+      "https://www.youtube.com/channel/UCXbXfisDHV_gDjawCKTyTIw"
+    );
+    setLivestream(
+      "https://www.youtube.com/watch?v=VITDq1IfvqI&list=PLkPj9NDKnRq9NUt2Mp2mv-7GVnkCt-YMA&autoplay=1&index=2"
+    );
     playLiveStream(true);
     setPauseScreen("unpauseScreen");
     setPlayPause(pauseImg);
@@ -248,7 +252,7 @@ function App() {
   return (
     <div className="interfaceContainer">
       <div className="radioContainer">
-        <div className="logo">HitLijstTV</div>
+        <div className="logo">StudyBeats</div>
         <div className="radioStationsContainer">
           <RadioStations
             Ambient={AmbientRenders}
@@ -259,7 +263,7 @@ function App() {
             Cow={chilledCow}
             Ivy={IvyRecords}
             Boy={LofiBoy}
-            Lofi={VlaamseTop30}
+            Lofi={LofiGirlVideo}
             Chill={ChillAF}
             Jazz={theJazzHopCafe}
             Nice={NiceGuys}
@@ -269,6 +273,17 @@ function App() {
         </div>
         <div className="socialsContainer2">
           <div className="socials">
+            <motion.div
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => {
+                window.open("https://github.com/adamPatrick12");
+              }}
+              className="link"
+            >
+              <img className="githubLogo" src={github} alt="" />
+              Github
+            </motion.div>
             <motion.div
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.9 }}
@@ -295,7 +310,7 @@ function App() {
       </div>
       <div className={pauseScreen}>
         <PauseImage />
-        <p style={{ marginTop: "0rem" }}>TV Gepauzeerd</p>
+        <p style={{ marginTop: "0rem" }}>Music Paused</p>
       </div>
       <AdditionSettings youtube={youtubeChannal} radio={stationName} />
       <div class="videoContainer">

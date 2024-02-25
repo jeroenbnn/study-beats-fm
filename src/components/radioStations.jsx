@@ -21,51 +21,52 @@ const RadioStations = ({
 }) => {
   return (
     <div className="radioList">
+
+    <motion.div animate={{ opacity: [0, 1] }} transition={{ delay: 0.15 }}>
+        <motion.div
+          whileHover={{ scale: 1.09 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={Anime}
+          className={
+            setActiveStation(StationName) === "Vlaamse Top 30"
+              ? "activeStation"
+              : "station"
+          }
+        >
+          <img
+            className={
+              setActiveStation(StationName) === "Vlaamse Top 30"
+                ? "activeTriangle"
+                : "triangle"
+            }
+            src={triangle}
+            alt=""
+          />
+          Vlaamse Top 30
+        </motion.div>
+      </motion.div>
+
       <motion.div animate={{ opacity: [0, 1] }} transition={{ delay: 0 }}>
         <motion.div
           whileHover={{ scale: 1.09 }}
           whileTap={{ scale: 0.9 }}
           onClick={Ambient}
           className={
-            setActiveStation(StationName) === "Ultratop Vlaamse Top 30"
+            setActiveStation(StationName) === "Singles 50 Vlaanderen"
               ? "activeStation"
               : "station"
           }
         >
           <img
             className={
-              setActiveStation(StationName) === "Ultratop Vlaamse Top 30"
+              setActiveStation(StationName) === "Singles 50 Vlaanderen"
                 ? "activeTriangle"
                 : "triangle"
             }
             src={triangle}
             alt=""
           />
-          Ambient Renders
-        </motion.div>
-      </motion.div>
-
-      <motion.div animate={{ opacity: [0, 1] }} transition={{ delay: 0.15 }}>
-        <motion.div
-          whileHover={{ scale: 1.09 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={Anime}
-          className={
-            setActiveStation(StationName) === "Ultratop Singles 50 Vlaanderen"
-              ? "activeStation"
-              : "station"
-          }
-        >
-          <img
-            className={
-              setActiveStation(StationName) === "Ultratop Singles 50 Vlaanderen"
-                ? "activeTriangle"
-                : "triangle"
-            }
-            src={triangle}
-            alt=""
-          />
-          Anime Vibe
+          Singles 50 Vlaanderen
         </motion.div>
       </motion.div>
 
@@ -243,14 +244,14 @@ const RadioStations = ({
           whileTap={{ scale: 0.9 }}
           onClick={Lofi}
           className={
-            setActiveStation(StationName) === "Ultratop Vlaamse Top 30"
+            setActiveStation(StationName) === "Vlaamse Top 30"
               ? "activeStation"
               : "station"
           }
         >
           <img
             className={
-              setActiveStation(StationName) === "Ultratop Vlaamse Top 30"
+              setActiveStation(StationName) === "Vlaamse Top 30"
                 ? "activeTriangle"
                 : "triangle"
             }
